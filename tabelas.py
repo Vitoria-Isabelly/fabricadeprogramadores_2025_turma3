@@ -10,7 +10,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 base = declarative_base()
 
-class Usuario (base):
+class Usuario(base):
     __tablename__ = "usuarios" 
     
     id = Column(Integer, primary_key=True, index=True)
